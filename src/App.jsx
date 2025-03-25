@@ -1,0 +1,51 @@
+import { useState,useRef} from 'react'
+import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react'
+import Navbar from './components/navbar/navbar'
+import LandingPage from './components/landingPage/landingPage'
+import InfoSection from './components/infoSection/infoSection'
+import Products from './components/products/products'
+import HomeSignUp from './components/homeSignUp/homeSignUp'
+import Footer from './components/footer/footer'
+import SignUp from './components/SignUp/signUp'
+import Login from './components/login/login';
+import PrivateRoute from './components/PrivateRoute';
+function App() {
+  const infoRef = useRef(null);
+  const footerRef = useRef(null);
+
+  const scrollToInfo = ()=>{
+    infoRef.current?.scrollIntoView({behaviour: "smooth", block: "start"})  };
+
+    const scrollToFooter = ()=>{
+    footerRef.current?.scrollIntoView({behaviour: "smooth", block: "start"});
+  };
+
+  return (
+        <div>
+      <Routes>
+        <Route path='/' element={
+          <main>
+      <Navbar scrollToInfo={scrollToInfo} scrollToFooter={scrollToFooter}/>
+ 
+      <div><LandingPage/></div>
+      
+      <div><InfoSection ref={infoRef}/></div>
+
+      {/* <div><Products/></div> */}
+      
+      <div><HomeSignUp/></div>
+
+      <div><Footer ref= {footerRef}/></div>
+
+    </main>
+        } /> 
+        <Route path='/signUp' element={<SignUp/>} />
+        <Route path='/Login' element={<Login/>}/>
+      </Routes>
+      </div>
+  )
+}
+
+export default App

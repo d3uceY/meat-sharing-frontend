@@ -1,0 +1,46 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.section1{
+    width:30%;
+    padding: 10px;
+}
+
+.sectionText{
+    padding: 20px;
+}
+.sectionText h1 {
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+.sectionText p {
+    font-size: 0.8em;
+}
+
+.logo-section{
+    width: 7%;
+    height: 7%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.logo-section img{
+    height: 7%;
+}
+
+.section2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.miniSection{
+    padding: 10px;
+}
+
+.miniSection ul li{
+    padding: 10px;
+
+}

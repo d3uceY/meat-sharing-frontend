@@ -1,0 +1,30 @@
+h1{
+    font-size: 3.5em;
+}
+.HomeSignUp{
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    justify-content: center;
+    padding: 70px;
+}
+.HomeSignUpTexth1{
+    padding: 20px 20px 10px 20px;
+}
+.HomeSignUpTextp{
+    padding: 10px;
+}
+
+
+button{
+    padding:10px;
+    margin-top: 10px;
+    background-color:rgb(210, 132, 36);
+    color: red;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button:hover{
+    padding:15px;
+}

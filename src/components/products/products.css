@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.productSection{
+    padding: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.MeatCards{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.GoatCards{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.meatCard{
+    text-align: center;
+    background-color: rgb(222, 217, 217);
+    border-radius: 5px;
+    padding: 5px;
+    padding-top:20px ;
+    margin-top:30px;
+}
+.meatCard img{
+    height: 30vh;
+    width: 20vw;
+}
+
+.meatCard2{
+    background-color: rgb(222, 217, 217);
+    border-radius: 5px;
+    padding: 5px;
+    padding-top:20px ;
+    margin-top:30px;
+}
+.meatCard2 img{
+    height: 30vh;
+    width: 20vw;
+}
+.header{
+    padding: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 500;
+    padding: 5px,8px,8px,8px;
+}
+.titleHeader{
+    font-size: 3em;
+    font-weight: 600;
+    padding:30px;
+    color: red;
+}
+
+.description{
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.price{
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+button{
+    padding:10px;
+    margin-top: 10px;
+    background-color:rgb(210, 132, 36);
+    color: red;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+
+}
+button:hover{
+    padding:13px;
+}
