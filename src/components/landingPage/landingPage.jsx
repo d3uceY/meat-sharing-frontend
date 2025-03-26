@@ -8,7 +8,7 @@ export default function LandingPage(){
                 <h4>Join Our Meat sharing revolution</h4>
             </div>
             <div className="LandingPageImage">
-                <img src="src/assets/landingPage.jpg" alt="Landing page image" />
+                <img src="/landingPage.jpg" alt="Landing page image" />
             </div>
         </div>
     )
