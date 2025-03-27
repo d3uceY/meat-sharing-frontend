@@ -3,15 +3,15 @@ import './navbar.css'
 import { Routes, Route, Link } from "react-router-dom";
 import InfoSection from '../infoSection/infoSection';
 import Footer from '../footer/footer';
+import logo from "/assets/background.jpg";
 
 export default function Navbar({scrollToInfo,scrollToFooter}){
     return(
         <div>
 
-        
         <nav className='nav'>
             <div className='logo-section'>
-                {/* <a href="./landingPage"><img src="/src/assets/Group 4.png" alt= "logo" /></a> */}
+                 <img src= {logo} alt= " Protein logo" /> 
             </div>
             <div className='main-nav'>
                 <ul>
@@ -22,8 +22,8 @@ export default function Navbar({scrollToInfo,scrollToFooter}){
             </div>
             <div className='nav-utils'>
                 <ul>
-                    <li><a href="./SignUp">Sign In</a></li>
-                    <li><a href="./cart">Cart</a></li>
+                    <li><Link to ="./SignUp">Sign In</Link></li>
+                    <li><Link to ="./cart">Cart</Link></li>
 
                 </ul>
             </div>

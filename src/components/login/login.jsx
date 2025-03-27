@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./login.css";
 import api from "../services/api";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "/assets/Group\ 4.png"
 
 export default function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -30,7 +31,7 @@ export default function Login() {
     <div className="signUpSection">
       <div className="signUpContainer">
         <div className="signUpHeader">
-          <img src="src/assets/Group 4.png" alt="logo" />
+          <img src={logo} alt="logo" />
           <h1>Login</h1>
         </div>
         <form className="formContainer" onSubmit={handleSubmit}>

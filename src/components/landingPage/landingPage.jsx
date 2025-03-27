@@ -1,5 +1,6 @@
 import React from "react";
-import './landingPage.css'
+import './landingPage.css';
+import landingImage from "../../assets/landingPage.jpg";
 export default function LandingPage(){
     return(
         <div className = 'LandingPage'>
@@ -8,7 +9,9 @@ export default function LandingPage(){
                 <h4>Join Our Meat sharing revolution</h4>
             </div>
             <div className="LandingPageImage">
-                <img src="/assets/landingPage.jpg" alt="Landing page image" />
+                <img src={landingImage} 
+                alt="Landing page image"
+                 />
             </div>
         </div>
     )

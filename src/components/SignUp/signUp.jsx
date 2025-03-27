@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
 import api from "../services/api";
+import logo from "/assets/Group\ 4.png"
 
 export default function SignUp(){
     
@@ -50,7 +51,7 @@ export default function SignUp(){
         <div className="signUpSection">
             <div className="signUpContainer">
                 <div className="signUpHeader">
-                    <img src="src/assets/Group 4.png" alt="logo" />
+                    <img src= {logo} alt="logo" />
                     <h1>Sign Up</h1>
                 </div>
                 <form className="formContainer" onSubmit={handleSubmit}>
