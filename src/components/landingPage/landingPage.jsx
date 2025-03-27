@@ -1,6 +1,6 @@
 import React from "react";
 import './landingPage.css';
-import landingImage from "../../assets/landingPage.jpg";
+import landingImage from "/assets/landingPage.jpg";
 export default function LandingPage(){
     return(
         <div className = 'LandingPage'>

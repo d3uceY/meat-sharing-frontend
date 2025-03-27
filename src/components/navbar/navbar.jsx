@@ -2,8 +2,8 @@ import React from 'react'
 import './navbar.css'
 import { Routes, Route, Link } from "react-router-dom";
 import InfoSection from '../infoSection/infoSection';
-import Footer from '../footer/footer';
-import logo from "/assets/background.jpg";
+import Footer from '../footer/footer'; 
+import logo from "/assets/Group\ 4.png";
 
 export default function Navbar({scrollToInfo,scrollToFooter}){
     return(

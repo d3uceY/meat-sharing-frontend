@@ -17,15 +17,16 @@ function App() {
 
   const scrollToInfo = ()=>{
     infoRef.current?.scrollIntoView({behaviour: "smooth", block: "start"})  };
-
+    
     const scrollToFooter = ()=>{
-    footerRef.current?.scrollIntoView({behaviour: "smooth", block: "start"});
-  };
+      footerRef.current?.scrollIntoView({behaviour: "smooth", block: "start"});
+    };
+    
+    return (
+      <Router>
 
-  return (
-  
-
-        <div>
+      
+    <div>
       <Routes>
         <Route path='/' element={
           <main>
@@ -48,6 +49,7 @@ function App() {
       </Routes>
       </div>
     
+        </Router>
   )
 }
 
