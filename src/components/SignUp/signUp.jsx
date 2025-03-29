@@ -168,7 +168,7 @@ export default function SignUp() {
                 <CardFooter className="flex justify-center border-t border-gray-100 pt-6">
                     <p className="text-sm text-gray-600">
                         Already have an account?{" "}
-                        <Link to="./Login" className="font-medium text-(--brand-red) hover:text-(--brand-light-red) transition-colors">
+                        <Link to="/Login" className="font-medium text-(--brand-red) hover:text-(--brand-light-red) transition-colors">
                             Sign In
                         </Link>
                     </p>
