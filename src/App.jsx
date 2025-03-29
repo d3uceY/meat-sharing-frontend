@@ -39,7 +39,7 @@ function App() {
 
               <div><InfoSection ref={infoRef} /></div>
 
-              {/* <div><Products/></div> */}
+              <div><Products/></div>
 
               <div><HomeSignUp /></div>
 
