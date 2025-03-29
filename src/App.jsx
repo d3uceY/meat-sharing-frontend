@@ -39,8 +39,8 @@ function App() {
               <Footer ref={footerRef} />
             </main>
           } />
-          {/* <Route path='/SignUp' element={<SignUp />} />
-          <Route path='/Login' element={<Login />} /> */}
+          <Route path='/SignUp' element={<SignUp />} />
+          <Route path='/Login' element={<Login />} />
         </Routes>
       </div>
 

@@ -73,6 +73,9 @@
 }
 
 @theme inline {
+  --brand-red: #ff4545;
+  --brand-light-red: #ff9c73;
+  --brand-yellow: #fff5cd;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
