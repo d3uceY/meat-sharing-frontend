@@ -1,4 +1,4 @@
-import { useState,useRef} from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react'
@@ -15,41 +15,36 @@ function App() {
   const infoRef = useRef(null);
   const footerRef = useRef(null);
 
-  const scrollToInfo = ()=>{
-    infoRef.current?.scrollIntoView({behaviour: "smooth", block: "start"})  };
-    
-    const scrollToFooter = ()=>{
-      footerRef.current?.scrollIntoView({behaviour: "smooth", block: "start"});
-    };
-    
-    return (
-      <Router>
+  const scrollToInfo = () => {
+    infoRef.current?.scrollIntoView({ behaviour: "smooth", block: "start" })
+  };
 
-      
-    <div>
-      <Routes>
-        <Route path='/' element={
-          <main>
-      <Navbar scrollToInfo={scrollToInfo} scrollToFooter={scrollToFooter}/>
- 
-      <div><LandingPage/></div>
-      
-      <div><InfoSection ref={infoRef}/></div>
+  const scrollToFooter = () => {
+    footerRef.current?.scrollIntoView({ behaviour: "smooth", block: "start" });
+  };
 
-      {/* <div><Products/></div> */}
-      
-      <div><HomeSignUp/></div>
+  return (
+    <Router>
 
-      <div><Footer ref= {footerRef}/></div>
 
-    </main>
-        } /> 
-        <Route path='/SignUp' element={<SignUp/>} />
-        <Route path='/Login' element={<Login/>}/>
-      </Routes>
+      <div>
+        <Routes>
+          <Route path='/' element={
+            <main>
+              <Navbar scrollToInfo={scrollToInfo} scrollToFooter={scrollToFooter} />
+              <LandingPage />
+              <InfoSection ref={infoRef} />
+              <Products />
+              <HomeSignUp />
+              <Footer ref={footerRef} />
+            </main>
+          } />
+          <Route path='/SignUp' element={<SignUp />} />
+          <Route path='/Login' element={<Login />} />
+        </Routes>
       </div>
-    
-        </Router>
+
+    </Router>
   )
 }
 
