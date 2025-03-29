@@ -1,9 +1,9 @@
-import cowMeat1 from "../../assets/cowmeat1.png";
-import cowMeat2 from "../../assets/cowmeat2.png";
-import cowMeat3 from "../../assets/cowmeat3.png";
-import goatMeat1 from "../../assets/goatmeat1.png";
-import goatMeat2 from "../../assets/goatmeat2.png";
-import goatMeat3 from "../../assets/goatmeat3.png";
+import cowMeat1 from "/assets/cowmeat1.png";
+import cowMeat2 from "/assets/cowmeat2.png";
+import cowMeat3 from "/assets/cowmeat3.png";
+import goatMeat1 from "/assets/goatmeat1.png";
+import goatMeat2 from "/assets/goatmeat2.png";
+import goatMeat3 from "/assets/goatmeat3.png";
 
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
