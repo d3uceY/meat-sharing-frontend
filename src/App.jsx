@@ -32,23 +32,15 @@ function App() {
           <Route path='/' element={
             <main>
               <Navbar scrollToInfo={scrollToInfo} scrollToFooter={scrollToFooter} />
-              <h1 class="text-3xl font-bold underline">
-                Hello world!
-              </h1>
-              <div><LandingPage /></div>
-
-              <div><InfoSection ref={infoRef} /></div>
-
-              <div><Products/></div>
-
-              <div><HomeSignUp /></div>
-
-              <div><Footer ref={footerRef} /></div>
-
+              <LandingPage />
+              <InfoSection ref={infoRef} />
+              <Products />
+              <HomeSignUp />
+              <Footer ref={footerRef} />
             </main>
           } />
-          <Route path='/SignUp' element={<SignUp />} />
-          <Route path='/Login' element={<Login />} />
+          {/* <Route path='/SignUp' element={<SignUp />} />
+          <Route path='/Login' element={<Login />} /> */}
         </Routes>
       </div>
 
