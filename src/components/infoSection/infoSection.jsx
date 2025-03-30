@@ -4,8 +4,8 @@ import { Beef, Leaf, Users } from "lucide-react"
 
 const InfoSection = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-slate-50">
-      <div className="container mx-auto px-4">
+    <section ref={ref} className="py-16 md:py-24 bg-(--brand-yellow)/30">
+      <div className="container max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Discover the Benefits of Meat Sharing</h2>
@@ -18,11 +18,11 @@ const InfoSection = forwardRef((props, ref) => {
         {/* Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-            <div className="absolute top-0 left-0 h-1 w-full bg-primary transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <Card className="border-(--brand-light-red)/10 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
+            <div className="absolute top-0 left-0 h-1 w-full bg-(--brand-red) transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             <CardHeader className="pb-2">
-              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <Beef className="h-6 w-6 text-primary" />
+              <div className="h-12 w-12 rounded-lg bg-(--brand-light-red)/20 flex items-center justify-center mb-4">
+                <Beef className="h-6 w-6 text-(--brand-red)" />
               </div>
               <CardTitle className="text-xl font-bold text-slate-900">Quality Meat for the Discerning Palate</CardTitle>
             </CardHeader>
@@ -32,11 +32,11 @@ const InfoSection = forwardRef((props, ref) => {
           </Card>
 
           {/* Card 2 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-            <div className="absolute top-0 left-0 h-1 w-full bg-primary transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <Card className="border-(--brand-light-red)/10 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
+            <div className="absolute top-0 left-0 h-1 w-full bg-(--brand-red) transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             <CardHeader className="pb-2">
-              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <Leaf className="h-6 w-6 text-primary" />
+              <div className="h-12 w-12 rounded-lg bg-(--brand-light-red)/20 flex items-center justify-center mb-4">
+                <Leaf className="h-6 w-6 text-(--brand-red)" />
               </div>
               <CardTitle className="text-xl font-bold text-slate-900">
                 Sustainable Sourcing for Greener Future
@@ -50,11 +50,11 @@ const InfoSection = forwardRef((props, ref) => {
           </Card>
 
           {/* Card 3 */}
-          <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
-            <div className="absolute top-0 left-0 h-1 w-full bg-primary transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+          <Card className="border-(--brand-light-red)/10 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
+            <div className="absolute top-0 left-0 h-1 w-full bg-(--brand-red) transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             <CardHeader className="pb-2">
-              <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-primary" />
+              <div className="h-12 w-12 rounded-lg bg-(--brand-light-red)/20 flex items-center justify-center mb-4">
+                <Users className="h-6 w-6 text-(--brand-red)" />
               </div>
               <CardTitle className="text-xl font-bold text-slate-900">
                 Community Focused - Join Our Meat Lovers Network

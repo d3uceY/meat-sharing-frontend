@@ -4,19 +4,19 @@ import { ArrowRight } from "lucide-react"
 
 export default function HomeSignUp() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-primary/90 to-primary py-16 md:py-24">
+    <div className="relative overflow-hidden bg-gradient-to-br from-(--brand-red) to-(--brand-light-red) py-16 md:py-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="absolute top-0 left-0 right-0 h-px bg-white/20"></div>
         <div className="absolute bottom-0 left-0 right-0 h-px bg-white/20"></div>
         <div className="absolute inset-0 grid grid-cols-6 gap-px">
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="border-l border-white/20 h-full"></div>
+            <div key={i} className="border-l border-black h-full"></div>
           ))}
         </div>
         <div className="absolute inset-0 grid grid-rows-6 gap-px">
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="border-t border-white/20 w-full"></div>
+            <div key={i} className="border-t border-black w-full"></div>
           ))}
         </div>
       </div>
@@ -33,8 +33,7 @@ export default function HomeSignUp() {
           <Button
             asChild
             size="lg"
-            variant="secondary"
-            className="group font-medium text-base px-8 py-6 rounded-full hover:scale-105 transition-all duration-300"
+            className="bg-(--brand-yellow) text-(--brand-red) hover:bg-(--brand-yellow)/90 group font-medium text-base px-8 py-6 rounded-full hover:scale-105 transition-all duration-300"
           >
             <Link to="/SignUp" className="flex items-center gap-2">
               Sign Up
@@ -45,8 +44,8 @@ export default function HomeSignUp() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
-      <div className="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
+      <div className="absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-(--brand-yellow)/20 blur-3xl"></div>
+      <div className="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-(--brand-yellow)/20 blur-3xl"></div>
     </div>
   )
 }
